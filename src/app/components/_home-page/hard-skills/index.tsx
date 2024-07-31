@@ -118,9 +118,9 @@ export const HardSkills = () => {
     },
   ]
   return (
-    <section>
-      <span className="text-emerald-500 font-mono">../competencia</span>
-      <h2 className="text-3xl font-bold font-mono">Conhecimentos</h2>
+    <section className="flex flex-col items-center">
+      <span className="section-sub-title">../competencia</span>
+      <h2 className="section-title">Conhecimentos</h2>
       <div className="flex justify-center gap-3 flex-wrap py-16 ">
         {HARD_SKILLS.map((skill, index) => (
           <SkillCard {...skill} key={index} />
