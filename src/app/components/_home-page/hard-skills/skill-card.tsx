@@ -12,7 +12,7 @@ export const SkillCard = ({
 }: SkillCardProps) => {
   const check = true
   return (
-    <div className="flex justify-between w-[250px] bg-gray-900 opacity-80 p-6">
+    <div className="flex justify-between w-[250px] bg-gray-900 opacity-80 p-6 hover:shadow-teste ">
       <div className="space-y-2">
         <strong className="text-gray-500 hover:text-gray-100 ease-in duration-300">
           {description}

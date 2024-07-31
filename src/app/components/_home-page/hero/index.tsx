@@ -35,8 +35,8 @@ export const Hero = () => {
     <section className="container flex flex-col-reverse items-center bg-hero-image bg-cover my-20">
       <div className="flex flex-col gap-3">
         <div className="text-center pt-3 ">
-          <h1 className="text-4xl font-mono font-semibold">Mairon Vilela</h1>
-          <strong className="text-base  text-emerald-500">
+          <h1 className="text-4xl font-mono font-semibold ">Mairon Vilela</h1>
+          <strong className="text-base  text-emerald-500 mt-1">
             Desenvolvedor Back-end Javascript
           </strong>
         </div>

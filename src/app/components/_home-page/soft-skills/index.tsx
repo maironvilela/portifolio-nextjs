@@ -36,16 +36,18 @@ export const SoftSkill = () => {
     },
   ]
   return (
-    <section className="container flex flex-col items-center gap-2">
-      <span className="section-sub-title text-center w-full px-4 s  ">
-        ../SoftSkills
+    <section className="flex flex-col items-center">
+      <span className="section-sub-title text-center px-4 shadow-teste ">
+        ../soft-skills
       </span>
       <h2 className="container section-title text-center  ">
-        habilidades interpessoais e comportamentais
+        Habilidades Interpessoais e Comportamentais
       </h2>
 
       {SOFT_SKILLS.map((skill, index) => (
-        <SoftSkillCard {...skill} key={index} />
+        <>
+          <SoftSkillCard {...skill} key={index} reverse={index % 2 == 0} />
+        </>
       ))}
     </section>
   )

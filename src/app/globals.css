@@ -36,6 +36,6 @@
   }
 
   .section-sub-title {
-    @apply text-emerald-500 font-mono;
+    @apply text-emerald-500 font-mono shadow-teste;
   }
 }
