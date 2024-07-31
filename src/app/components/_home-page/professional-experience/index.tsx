@@ -1,4 +1,3 @@
-import { compare } from "bcrypt";
 import { ExperienceItem } from "./experience-item"
 import { MdCurrencyExchange } from "react-icons/md";
 

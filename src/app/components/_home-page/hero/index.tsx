@@ -36,7 +36,8 @@ export const Hero = () => {
       <div className="flex flex-col gap-3">
         <div className="text-center pt-3 ">
           <h1 className="text-4xl font-mono font-semibold ">Mairon Vilela</h1>
-          <strong className="text-base  text-emerald-500 mt-1">
+          <div className="h-[3px] w-20 m-auto bg-gray-800 shadow-teste" />
+          <strong className="text-base  text-emerald-500 mt-1 ">
             Desenvolvedor Back-end Javascript
           </strong>
         </div>

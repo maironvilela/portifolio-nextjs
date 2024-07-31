@@ -7,10 +7,10 @@ import { ProfessionalExperience } from './components/_home-page/professional-exp
 export default function Home() {
   return (
     <div className="flex flex-col">
-      {/**
+
       <Hero />
       <HardSkills />
-     <SoftSkill /> */}
+      <SoftSkill />
       <ProfessionalExperience />
     </div>
   )
