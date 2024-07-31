@@ -26,4 +26,8 @@
   .container {
     @apply mx-auto w-full max-w-[1200px] px-6 py-6;
   }
+
+  .styles-icons {
+    @apply text-gray-500 hover:text-gray-100 ease-in duration-300;
+  }
 }
