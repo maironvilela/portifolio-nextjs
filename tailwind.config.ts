@@ -9,13 +9,11 @@ const config: Config = {
   theme: {
     fontFamily: {
       sans: ['var(--font-inter)', 'sans-serif'],
+      mono: ['var(--font-kode-mono)', 'monospace'],
     },
     extend: {
       backgroundImage: {
-        'hero-image': "url('/assets/images/hero-bg.png')",
-      },
-      fontFamily: {
-        mono: ['var(--font-plex-mono)', 'monospace'],
+        'hero-image': "url('/assets/images/hero-bg-sm.png')",
       },
     },
   },
