@@ -1,4 +1,7 @@
+"use client"
+
 import { SectionHeader } from "@/components/shared/sections-header"
+import { motion } from 'framer-motion';
 
 export const Education = () => { // precisa criar componente educationItem
     const TITLE = 'Formação Acadêmica'
@@ -11,7 +14,11 @@ export const Education = () => { // precisa criar componente educationItem
             <SectionHeader title={TITLE} subTitle={SUBTITLE} />
 
 
-            <div className="flex flex-col items-center py-6">
+            <motion.div className="flex flex-col items-center py-6"
+                initial={{ opacity: 0, scale: 0.1 }}
+                exit={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ ease: "easeOut", duration: 2 }}>
                 <strong className="text-lg">
                     Bacharelado em Sistema de Informação
                 </strong>
@@ -19,14 +26,18 @@ export const Education = () => { // precisa criar componente educationItem
                     Faculdade Cotemig
                 </strong>
                 <span className="text-gray-400">Conclusão: 2018</span>
-            </div>
+            </motion.div>
 
-            <div className="flex flex-col items-center py-6">
+            <motion.div className="flex flex-col items-center py-6"
+                initial={{ opacity: 0, scale: 0.1 }}
+                exit={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ ease: "easeOut", duration: 2 }}>
                 <strong className="text-lg">
                     Técnico em Informática </strong>
                 <strong> Senai / Contagem</strong>
                 <span className="text-gray-400">Conclusão: 2011</span>
-            </div>
+            </motion.div>
         </section >
     )
 }

@@ -1,3 +1,4 @@
+"use client"
 import {
   TbBrandHtml5,
   TbBrandCss3,
@@ -22,6 +23,7 @@ import {
 } from 'react-icons/si'
 import { SkillCard } from './skill-card'
 import { SectionHeader } from '@/components/shared/sections-header'
+import { motion } from 'framer-motion';
 
 export const HardSkills = () => {
 
@@ -126,7 +128,14 @@ export const HardSkills = () => {
 
       <div className="flex justify-center gap-3 flex-wrap py-16 ">
         {HARD_SKILLS.map((skill, index) => (
-          <SkillCard {...skill} key={index} />
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 1, delay: index * 0.1 }}>
+            <SkillCard {...skill} />
+          </motion.div>
         ))}
       </div>
     </section>

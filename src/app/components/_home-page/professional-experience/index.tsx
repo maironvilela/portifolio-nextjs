@@ -1,6 +1,9 @@
+"use client"
+
 import { SectionHeader } from "@/components/shared/sections-header";
 import { ExperienceItem } from "./experience-item"
 import { MdCurrencyExchange } from "react-icons/md";
+import { motion } from 'framer-motion';
 
 
 export const ProfessionalExperience = () => {
@@ -86,14 +89,15 @@ export const ProfessionalExperience = () => {
             <div className="flex flex-col gap-10 p-6">
 
                 {PROFESSION_EXPERIENCE_ITEMS.map(({ icon, company, position, description, startDate, endDate }, index) => (
-                    <ExperienceItem icon={icon}
-                        company={company}
-                        position={position}
-                        description={description}
-                        startDate={startDate}
-                        endDate={startDate}
-                        key={index} />
-                ))}
+                    
+                        <ExperienceItem icon={icon}
+                            company={company}
+                            position={position}
+                            description={description}
+                            startDate={startDate}
+                            endDate={startDate}
+                            key={index} />
+                 ))}
 
 
             </div>

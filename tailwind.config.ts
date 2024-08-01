@@ -19,6 +19,7 @@ const config: Config = {
         'hero-image': "url('/assets/images/bg-code.png')",
         'education-image': "url('/assets/images/cap.svg')",
         'hero-code': "url('/assets/images/code.png')",
+        'hero-bg-sm': "url('/assets/images/hero-bg-sm.png')",
       },
     },
     boxShadow: {
