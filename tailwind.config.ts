@@ -17,6 +17,7 @@ const config: Config = {
       },
       backgroundImage: {
         'hero-image': "url('/assets/images/hero-bg-sm.png')",
+        'education-image': "url('/assets/images/cap.svg')",
       },
     },
     boxShadow: {

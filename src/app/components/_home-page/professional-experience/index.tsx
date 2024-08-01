@@ -64,7 +64,7 @@ export const ProfessionalExperience = () => {
             icon: <MdCurrencyExchange size={50} />,
             company: "Comercial MDM",
             position: "Embalador de Mercadorias",
-            description: "O papel de auxiliar do Encarregado Fiscal de Caixa envolve diversas responsabilidades. O auxiliar atende aos clientes, ajuda no fornecimento de troco e na retirada de valores dos caixas (a famosa “sangria”), colabora no gerenciamento da equipe e também participa do fechamento dos caixas. É um trabalho que requer versatilidade e habilidades tanto operacionais quanto de apoio à gestão",
+            description: "responsável por garantir que os produtos adquiridos pelos clientes sejam embalados de forma adequada e eficiente",
             startDate: new Date(),
             endDate: new Date(),
         },
@@ -75,7 +75,7 @@ export const ProfessionalExperience = () => {
     return (
         <section className="container flex flex-col items-center mt-10">
             <div>
-                <span className="section-sub-title ">../Experiences</span>
+                <span className="section-sub-title">../Experiences</span>
                 <h2 className="section-title text-center">Professional Experience</h2>
                 <p className="container text-gray-400 text-center mt-4 text-sm">
                     Busco constantemente a melhoria contínua e o desenvolvimento pessoal e

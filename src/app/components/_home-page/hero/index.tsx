@@ -32,7 +32,7 @@ export const Hero = () => {
   ]
 
   return (
-    <section className="container flex flex-col-reverse items-center bg-hero-image bg-cover my-20">
+    <section className="container flex flex-col-reverse items-center bg-hero-image bg-cover mt-20">
       <div className="flex flex-col gap-3">
         <div className="text-center pt-3 ">
           <h1 className="text-4xl font-mono font-semibold ">Mairon Vilela</h1>
