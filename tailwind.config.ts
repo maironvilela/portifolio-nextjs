@@ -16,8 +16,9 @@ const config: Config = {
         '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       },
       backgroundImage: {
-        'hero-image': "url('/assets/images/hero-bg-sm.png')",
+        'hero-image': "url('/assets/images/bg-code.png')",
         'education-image': "url('/assets/images/cap.svg')",
+        'hero-code': "url('/assets/images/code.png')",
       },
     },
     boxShadow: {

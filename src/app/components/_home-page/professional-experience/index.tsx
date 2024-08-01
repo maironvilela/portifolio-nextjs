@@ -77,13 +77,13 @@ export const ProfessionalExperience = () => {
         <section className="container flex flex-col ">
 
             <SectionHeader title="Experiências Profissionais" subTitle="{ ...experiences }" />
-            <p className="p-8 text-center">
+            <p className="p-4 text-center text-lg">
                 Busco constantemente a melhoria contínua e o desenvolvimento pessoal e
                 profissional. Estou sempre em busca de oportunidades de aprendizado e
                 crescimento
             </p>
 
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-10 p-6">
 
                 {PROFESSION_EXPERIENCE_ITEMS.map(({ icon, company, position, description, startDate, endDate }, index) => (
                     <ExperienceItem icon={icon}

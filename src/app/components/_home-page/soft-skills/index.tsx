@@ -8,7 +8,7 @@ export const SoftSkill = () => {
       imageUrl: '/assets/images/empatia.png',
     },
     {
-      description: 'inteligencia-emocional',
+      description: 'Inteligencia Emocional',
       imageUrl: '/assets/images/inteligencia-emocional.png',
     },
     {
@@ -43,7 +43,7 @@ export const SoftSkill = () => {
 
 
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center ">
         {SOFT_SKILLS.map((skill, index) => (
           <>
             <SoftSkillCard {...skill} key={index} reverse={index % 2 == 0} />

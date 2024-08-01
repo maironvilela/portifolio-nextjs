@@ -14,11 +14,10 @@ export const SoftSkillCard = ({
 }: SoftSkillCardProps) => {
   return (
     <div
-      className={`flex items-center gap-2 w-72 h-28 rounded-lg  ${reverse ? 'flex-row-reverse' : 'flex-row '
-        }`}
+      className={`flex gap-2 w-[300px] md:w-[550px] lg:w-[600px] items-center h-28 rounded-lg   ${reverse ? 'flex-row-reverse' : 'flex-row '}`}
     >
       <Image src={imageUrl} width={100} height={100} alt="" />
-      <span>{description}</span>
+      <span className="text-emerald-500 font-mono font-bold text-lg">{description}</span>
     </div>
   )
 }

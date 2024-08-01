@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 export const Header = () => {
   return (
-    <header>
-      <ul className="flex justify-center container gap-4 fixed bg-gray-800 text-emerald-100 font-mono z-10">
+    <header className="w-full fixed bg-gray-800 text-emerald-100 font-mono z-10 p-8 ">
+      <ul className="flex justify-center  gap-4 ">
         <li>
           <Link href="/">
             <strong className="mr-1">#</strong>
