@@ -76,7 +76,7 @@ export const ProfessionalExperience = () => {
         <section className="container flex flex-col items-center mt-10">
             <div>
                 <span className="section-sub-title">../Experiences</span>
-                <h2 className="section-title text-center">Professional Experience</h2>
+                <h2 className="section-title text-center">Experiências Profissionais</h2>
                 <p className="container text-gray-400 text-center mt-4 text-sm">
                     Busco constantemente a melhoria contínua e o desenvolvimento pessoal e
                     profissional. Estou sempre em busca de oportunidades de aprendizado e

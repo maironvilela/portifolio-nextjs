@@ -4,6 +4,7 @@ import { HardSkills } from '@/components/_home-page/hard-skills'
 import { SoftSkill } from './components/_home-page/soft-skills'
 import { ProfessionalExperience } from './components/_home-page/professional-experience'
 import { Education } from './components/_home-page/education'
+import { Qualifications } from './components/_home-page/qualifications'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Education />
       <HardSkills />
       <SoftSkill />
+      <Qualifications />
       <ProfessionalExperience />
     </div>
   )
