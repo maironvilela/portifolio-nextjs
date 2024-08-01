@@ -80,11 +80,15 @@ export const ProfessionalExperience = () => {
         <section className="container flex flex-col ">
 
             <SectionHeader title="Experiências Profissionais" subTitle="{ ...experiences }" />
-            <p className="p-4 text-center text-lg">
+            <motion.p className="p-4 text-center text-lg"
+                  initial={{ opacity: 0, scale: 0.1 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ ease: "easeOut", duration: 2 }}>
                 Busco constantemente a melhoria contínua e o desenvolvimento pessoal e
                 profissional. Estou sempre em busca de oportunidades de aprendizado e
                 crescimento
-            </p>
+            </motion.p>
 
             <div className="flex flex-col gap-10 p-6">
 
