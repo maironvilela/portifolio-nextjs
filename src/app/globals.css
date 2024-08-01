@@ -30,12 +30,4 @@
   .styles-icons {
     @apply text-gray-500 hover:text-gray-100 ease-in duration-300;
   }
-
-  .section-title {
-    @apply text-3xl font-bold font-mono;
-  }
-
-  .section-sub-title {
-    @apply text-emerald-500 font-mono shadow-teste;
-  }
 }

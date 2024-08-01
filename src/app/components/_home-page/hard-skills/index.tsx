@@ -21,8 +21,10 @@ import {
   SiVitest,
 } from 'react-icons/si'
 import { SkillCard } from './skill-card'
+import { SectionHeader } from '@/components/shared/sections-header'
 
 export const HardSkills = () => {
+
   const HARD_SKILLS = [
     {
       description: 'HTML 5',
@@ -119,10 +121,8 @@ export const HardSkills = () => {
   ]
   return (
     <section className="container flex flex-col">
-      <div>
-        <span className="section-sub-title ">../hard-skills</span>
-        <h2 className="section-title text-center">Habilidades Técnicas</h2>
-      </div>
+
+      <SectionHeader title={'Habilidades Técnicas'} subTitle='{ ...hard-skills }' />
 
       <div className="flex justify-center gap-3 flex-wrap py-16 ">
         {HARD_SKILLS.map((skill, index) => (

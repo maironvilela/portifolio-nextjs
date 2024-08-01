@@ -1,3 +1,4 @@
+import { SectionHeader } from '@/components/shared/sections-header'
 import { SoftSkillCard } from './soft-skill-card'
 
 export const SoftSkill = () => {
@@ -36,15 +37,10 @@ export const SoftSkill = () => {
     },
   ]
   return (
-    <section className="flex flex-col">
-      <div>
-        <span className="section-sub-title shadow-teste ">
-          ../soft-skills
-        </span>
-        <h2 className="container section-title text-center  ">
-          Habilidades Interpessoais e Comportamentais
-        </h2>
-      </div>
+    <section className="container flex flex-col">
+
+      <SectionHeader title={'Habilidades Interpessoais e Comportamentais'} subTitle=' { ...soft-skills }' />
+
 
 
       <div className="flex flex-col items-center">

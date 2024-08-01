@@ -1,5 +1,6 @@
 import { FaMedal } from "react-icons/fa";
 import { QualificationsItem } from "./qualifications-Item";
+import { SectionHeader } from "@/components/shared/sections-header";
 
 
 export const Qualifications = () => {
@@ -105,14 +106,9 @@ export const Qualifications = () => {
     ]
     return (
         <section className="container flex flex-col mt-6">
-            <div>
-                <span className="section-sub-title shadow-teste ">
-                    ../cursos
-                </span>
-                <h2 className="container section-title text-center  ">
-                    Qualificações e Atividades Complementares
-                </h2>
-            </div>
+
+            <SectionHeader title=" Qualificações e Atividades Complementares" subTitle="{ ...cursos }" />
+
 
             <div className="flex flex-col gap-8">
 
