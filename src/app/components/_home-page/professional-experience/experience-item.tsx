@@ -27,7 +27,7 @@ export const ExperienceItem = ({ icon, company, position, description, startDate
         <div className="h-full w-[1px] bg-gray-100 ml-6" />
 
       </div>
-
+ 
       <motion.div className=" flex flex-1 flex-col items-start gap-2"
          initial={{ opacity: 0, x: -100 }}
          whileInView={{ opacity: 1, x: 0 }}

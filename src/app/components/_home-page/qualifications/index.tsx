@@ -117,12 +117,12 @@ export const Qualifications = () => {
             <div className="flex flex-col gap-8">
 
                 {QUALIFICATIONS.map((qualification, index) => (
-                    <motion.div 
+                    <motion.div key={index}
                     initial={{ opacity: 0, scale: 0.1 }}
                     exit={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ ease: "easeOut", duration: 2 }}>
-                        <QualificationsItem {...qualification} key={index} />
+                        <QualificationsItem {...qualification}  />
                         <div className="h-[1px] w-20 m-auto bg-gray-800 shadow-teste p-1" />
                     </motion.div>
 
