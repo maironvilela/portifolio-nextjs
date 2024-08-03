@@ -1,6 +1,6 @@
 "use client"
 
-import { SectionHeader } from '@/components/shared/sections-header'
+import { SectionHeader } from '@/components/shared/'
 import { SoftSkillCard } from './soft-skill-card'
 import { motion } from 'framer-motion';
 

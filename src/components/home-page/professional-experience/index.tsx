@@ -1,6 +1,6 @@
 "use client"
 
-import { SectionHeader } from "@/components/shared/sections-header";
+import { SectionHeader } from "@/components/shared/"
 import { ExperienceItem } from "./experience-item"
 import { MdCurrencyExchange } from "react-icons/md";
 import { motion } from 'framer-motion';

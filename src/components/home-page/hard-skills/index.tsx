@@ -21,8 +21,8 @@ import {
   SiReact,
   SiVitest,
 } from 'react-icons/si'
-import { SkillCard } from './skill-card'
-import { SectionHeader } from '@/components/shared/sections-header'
+import { SkillCard } from './skill-card';
+import { SectionHeader } from '@/components/shared';
 import { motion } from 'framer-motion';
 
 export const HardSkills = () => {

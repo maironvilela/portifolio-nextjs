@@ -35,7 +35,7 @@ export const Hero = () => {
   ]
 
   return (
-    <section className=" flex flex-col-reverse items-center bg-hero-image bg-cover  pt-24">
+    <section className=" flex flex-col-reverse items-center bg-hero-image bg-cover  py-24">
 
       <div className="flex flex-col gap-3 container ">
 
@@ -101,7 +101,7 @@ export const Hero = () => {
         transition={{ duration: 1 }}>
         <Image
           className="rounded-full"
-          src="https://th.bing.com/th?q=Avatar+Patati+Patata&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=pt-BR&cc=BR&setlang=pt-br&adlt=moderate&t=1&mw=247"
+          src="/assets/images/avatar.svg"
           alt="Mairon Vilela"
           width={250}
           height={250}

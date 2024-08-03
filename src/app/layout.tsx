@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Kode_Mono } from 'next/font/google'
 import './globals.css'
-import { Header } from './components/shared/header'
+import { Header } from '@/components/shared'
 
 export const metadata: Metadata = {
   title: 'Create Next App',

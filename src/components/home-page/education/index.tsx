@@ -1,6 +1,6 @@
 "use client"
 
-import { SectionHeader } from "@/components/shared/sections-header"
+import { SectionHeader } from "@/components/shared"
 import { motion } from 'framer-motion';
 
 export const Education = () => { // precisa criar componente educationItem

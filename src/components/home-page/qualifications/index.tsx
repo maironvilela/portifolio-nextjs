@@ -2,7 +2,7 @@
 
 import { FaMedal } from "react-icons/fa";
 import { QualificationsItem } from "./qualifications-Item";
-import { SectionHeader } from "@/components/shared/sections-header";
+import { SectionHeader } from "@/components/shared";
 import { motion } from 'framer-motion';
 
 

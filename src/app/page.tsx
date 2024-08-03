@@ -1,10 +1,6 @@
 import Image from 'next/image'
-import { Hero } from '@/components/_home-page'
-import { HardSkills } from '@/components/_home-page/hard-skills'
-import { SoftSkill } from './components/_home-page/soft-skills'
-import { ProfessionalExperience } from './components/_home-page/professional-experience'
-import { Education } from './components/_home-page/education'
-import { Qualifications } from './components/_home-page/qualifications'
+import { Hero, HardSkills, SoftSkill , ProfessionalExperience, Education, Qualifications} from '@/components/home-page'
+ 
 
 export default function Home() {
   return (
