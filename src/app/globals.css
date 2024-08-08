@@ -30,4 +30,19 @@
   .styles-icons {
     @apply text-gray-500 hover:text-gray-100 ease-in duration-300;
   }
+
+  .icon-svg-hero {
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .icon-svg-hard-skills {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
+ 
