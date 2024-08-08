@@ -5,6 +5,8 @@ const nextConfig = {
   },
 
   staticPageGenerationTimeout: 800,
+  optimizeFonts: false,
+
 }
 
 export default nextConfig

@@ -23,7 +23,6 @@ export const Header = () => {
   ]
 
 
-
   return (
     <header className="w-full fixed bg-gray-800 text-emerald-100 font-mono z-10 p-6 ">
       <ul className="flex justify-center  gap-4 ">
