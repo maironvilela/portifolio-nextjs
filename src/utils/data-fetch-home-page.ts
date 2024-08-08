@@ -185,12 +185,5 @@ export const query = `
 export async function dataFetchHomePage() {
   const { homes } = await fetchHygraphQuery<DataFetchHomePageResult>(query)
 
-  console.table(
-    JSON.stringify(
-      homes[0].professionalExperienceSection.professionalExperienceItems
-    )
-  )
-  //console.table(homes[0].educationSection.educationItems)
-
   return { ...homes[0] }
 }

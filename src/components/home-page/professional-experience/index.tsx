@@ -1,6 +1,6 @@
 "use client"
 
-import { SectionHeader } from "@/components/shared/"
+import { SectionHeader } from "@/components/shared"
 import { ExperienceItem } from "./experience-item"
 import { motion } from 'framer-motion';
 import { ProfessionalExperienceSection as ProfessionalExperienceProps, } from "@/utils/data-fetch-home-page";
