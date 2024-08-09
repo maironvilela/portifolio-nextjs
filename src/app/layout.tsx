@@ -31,7 +31,7 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR" className={`${inter.variable} ${KodeMono.variable}`}>
-      <body className={inter.className}>
+      <body className={inter.className} >
         <Header />
         {children}
 

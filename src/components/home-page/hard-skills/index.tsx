@@ -36,7 +36,7 @@ export const HardSkills = ({ title, titleHeader, hardSkillsItems }: HardSkill) =
 
       <SectionHeader title={title} subTitle={titleHeader} />
 
-      <div className="flex justify-center gap-3 flex-wrap py-16 ">
+      <div className="flex justify-center gap-3 flex-wrap   ">
         {hardSkillsItems.map((skill, index) => {
           return (
             <motion.div

@@ -1,5 +1,5 @@
 "use client"
-import { ReckText } from '@/components/rich-text';
+import { ReckText } from '@/components/shared/rich-text';
 import { ProfessionalExperienceItems } from '@/utils/data-fetch-home-page';
 import { motion } from 'framer-motion';
 import Image from 'next/image';

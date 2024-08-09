@@ -29,7 +29,7 @@ export const Hero = ({ name, role, description, imageUrl, contacts }: HeroProps)
 
 
   return (
-    <section className=" flex flex-col-reverse items-center bg-hero-image bg-cover  py-24">
+    <section className=" flex flex-col-reverse items-center bg-hero-image bg-cover py-24 " >
 
       <div className="flex flex-col gap-5 container ">
 
@@ -79,7 +79,7 @@ export const Hero = ({ name, role, description, imageUrl, contacts }: HeroProps)
                     exit={{ opacity: 0, y: 50 }}
                     transition={{ duration: 1, delay: (index + 2) * 0.1 }}
                   >
-                    <Link href={contact.socialMediaUrl}>
+                    <Link href={contact.socialMediaUrl} target='_blank' >
                       <CMSIcon icon={contact.iconSvg} />
 
                     </Link>
@@ -97,8 +97,8 @@ export const Hero = ({ name, role, description, imageUrl, contacts }: HeroProps)
           className="rounded-full"
           src={imageUrl}
           alt="Mairon Vilela"
-          width={200}
-          height={200}
+          width={250}
+          height={300}
         />
       </motion.div>
     </section >
