@@ -8,6 +8,7 @@ const nextConfig = {
       'imgs.search.brave.com',
       'cdn.pixabay.com',
       'images.pexels.com',
+      'img.freepik.com',
     ],
   },
 }

@@ -21,7 +21,7 @@ export default function PostsPage() {
 
   return (
 
-    <div className="flex flex-wrap md:justify-center gap-8  px-20  pt-28 pb-8 bg-posts-page bg-gray-900 ">
+    <div className="flex flex-wrap md:justify-center gap-8  px-20  pt-28 pb-8  h-full">
       <CardPost summary={posts[0].summary} title={posts[0].title} imageUrl={posts[0].imageUrl} technologies={posts[0].technologies} />
       <CardPost summary={posts[1].summary} title={posts[1].title} imageUrl={posts[1].imageUrl} technologies={posts[1].technologies} />
 

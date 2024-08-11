@@ -12,7 +12,7 @@ export type CardPostProps = {
 
 export function CardPost({ summary, title, imageUrl, technologies, isPublish = false }: CardPostProps) {
     return (
-        <Link href="#" className=" flex-col flex  bg-opacity-50 hover:bg-opacity-0 bg-gray-950 mh-[500px] relative
+        <Link href="#" className=" flex-col flex  bg-opacity-50 hover:bg-opacity-0  bg-posts-page bg-cover mh-[500px] relative
                          hover:shadow-teste w-80 z-90" >
             <header className="gap-2 flex flex-col items-center ">
                 <Image
@@ -23,15 +23,14 @@ export function CardPost({ summary, title, imageUrl, technologies, isPublish = f
                     height={350}
                 />
 
-                {!isPublish && (<span className="  text-2xl text-center absolute top-10">EM BREVE</span>)}
+                {!isPublish && (<span className="text-2xl text-center absolute top-10">EM BREVE</span>)}
                 <p className="text-gray-400 text-xs text-left px-2 w-full -mt-6">🕑há ? min <span className="text-gray-700">|</span> 🔍 leitura: 10 min</p>
 
 
             </header>
 
             <main className="w-full box-border py-4  px-4 space-y-7  " >
-                <h2 className="text-center font-bold ">{title}</h2>
-
+                <h2 className="text-center font-bold font-mono">{title}</h2>
                 <p className=" text-justify text-sm text-gray-500 max-h-15" >{summary}</p>
             </main>
 
