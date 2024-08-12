@@ -26,7 +26,7 @@ export type DataFetchProjectsPageResult = {
 export const query = `
 query MyQuery {
   projectPages {
-    projects{
+    projects (first: 3){
       title
       projectUrl
       image {
