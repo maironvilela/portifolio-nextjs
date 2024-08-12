@@ -1,48 +1,55 @@
+import { ReckText } from "@/components/shared/rich-text";
+import { DataFetchProjectsPageResult, Projects } from "@/utils/data-fetch-projects-page";
 import Image from "next/image";
 import Link from "next/link";
+import { BsGithub } from "react-icons/bs";
 
-export function CardProject() {
+type CardProject = Projects;
+
+export function CardProject({ title, descriptions, projectUrl, technologies, image }: CardProject) {
     return (
-        <div className="flex gap-4  rounded-2xl p-4 
-                        even:bg-gradient-to-tl even:from-gray-700 even:to-gray-900
-                        odd:bg-gradient-to-br odd:from-gray-900 odd:to-gray-700">
+        <div className="flex gap-4 flex-col relative  rounded-3xl md:static  even:bg-gradient-to-br even:from-gray-500 even:to-gray-900
+                            odd:bg-gradient-to-tl odd:from-gray-900 odd:to-gray-500 md:flex-row md:p-4 md:mx-14">
             <Image
-                src="https://img.freepik.com/psd-gratuitas/renderizacao-3d-do-elemento-de-design-grafico_23-2149412223.jpg?size=626&ext=jpg"
-                width={100}
-                height={100}
+                src={image.url}
                 alt=""
-                className="w-20 h-20 rounded-full" />
+                width={500}
+                height={500}
+                className="h-40 w-full absolute z-10
+                           md:static md:w-28 md:h-28 md:rounded-full"            />
 
-            <div className="space-y-4 flex-1 p-8 px-4 ">
 
-                <div className=" flex  justify-between h-12">
-                    <h2 className="text-lg font-bold font-mono">jwt-authentication-with-fastify </h2>
-                    <Link href="https://github.com/maironvilela/jwt-authentication-with-fastify" target="_blank"  >
-                        <Image src='./assets/images/github-icon.svg'
-                            width={30}
-                            height={30}
-                            alt=""
-                            className="max-w-12 hover:w-16 transition-all	 duration-500		" />
+
+            <div className="flex-1 z-20 bg-gray-900 opacity-85 md:bg-transparent md;opacity-100">
+
+                <div className=" 
+                    flex flex-col-reverse justify-center items-center 
+                    md:justify-between md:flex-row h-40 md:h-auto " >
+                    <h2 className="text-lg font-bold font-mono text-center px-4 ">{title} </h2>
+
+                    <Link href={projectUrl} target="_blank"  >
+                        <BsGithub size={40} className="hover:text-emerald-400 absolute  top-3 right-3 md:static" />
                     </Link>
 
                 </div>
-                <p className="pr-16 text-gray-400 text-justify text-sm font-gray-400 ">Controle todos os dispositivos de sua residencia através do smartphone, tablet,
-                    computadores e assistente de vozem qualquer lugar do mundo . Controle todos os dispositivos de sua residencia através do smartphone, tablet,
-                    computadores e assistente de vozem qualquer lugar do mundo</p>
-
-
-                <div className="flex items-center justify-center flex-wrap gap-4 px-8 py-2 z-20">
-                    <span className="bg-green-900 text-emerald-500 hover:text-white hover:font-semibold py-1 px-2 rounded-lg  text-xs text-center w-28 h-6">NodeJS</span>
-                    <span className="bg-green-900 text-emerald-500 hover:text-white hover:font-semibold py-1 px-2 rounded-lg  text-xs text-center w-28 h-6">NodeJS</span>
-                    <span className="bg-green-900 text-emerald-500 hover:text-white hover:font-semibold py-1 px-2 rounded-lg  text-xs text-center w-28 h-6">Fastify</span>
-                    <span className="bg-green-900 text-emerald-500 hover:text-white hover:font-semibold py-1 px-2 rounded-lg  text-xs text-center w-28 h-6">Fastify JWT</span>
-                    <span className="bg-green-900 text-emerald-500 hover:text-white hover:font-semibold py-1 px-2 rounded-lg  text-xs text-center w-28 h-6">Fastify</span>
-                    <span className="bg-green-900 text-emerald-500 hover:text-white hover:font-semibold py-1 px-2 rounded-lg  text-xs text-center w-28 h-6">Fastify JWT</span>
-                    <span className="bg-green-900 text-emerald-500 hover:text-white hover:font-semibold py-1 px-2 rounded-lg  text-xs text-center w-28 h-6">Prisma</span>
+                <div className="text-gray-400 text-justify px-4 py-6">
+                    <ReckText content={descriptions.raw} />
                 </div>
+
+
+                <div className="flex items-center justify-center flex-wrap gap-4 px-8 pb-6 z-20"  >
+
+                    {technologies.map((technology, index) => (
+                        <span key={technology.name} className="bg-green-900 text-emerald-500 hover:text-white hover:font-semibold py-1 px-2 rounded-lg  text-xs text-center w-28 h-6">{technology.name}</span>
+
+                    ))}
+                </div>
+
+
+
 
             </div>
 
-        </div>
+        </div >
     )
 }

@@ -1,12 +1,23 @@
 import { CardProject } from "@/components/posts-page/card-project"
-import Image from "next/image"
-import Link from "next/link"
+import { dataFetchProjectPage, DataFetchProjectsPageResult } from "@/utils/data-fetch-projects-page"
 
-export default function ProjectsPage() {
+
+export default async function ProjectsPage() {
+  console.log('ProjectsPage')
+
+  const { projects } = await dataFetchProjectPage();
+
+
   return (
-    <div className="flex flex-col justify-center items-center space-y-3  container">
-      <CardProject />
-      <CardProject />
+    <div className="flex flex-col justify-center items-center gap-4  container ">
+
+      {projects.map((project, index) => (
+        <>
+          <CardProject key={`project-${index}`} {...project} />
+        </>
+
+      ))}
+
     </div>
   )
 }

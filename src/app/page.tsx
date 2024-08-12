@@ -6,7 +6,7 @@ export default async function Home() {
 
 
   return (
-    < div className="flex flex-col gap-4" >
+    < div className="flex flex-col gap-2" >
 
       <Hero name={heroSection.name}
         role={heroSection.role}

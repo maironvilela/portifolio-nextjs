@@ -9,6 +9,7 @@ export const ReckText = ({ ...props }: ReckTextProps) => {
       {...props}
       renderers={{
         li: ({ children }) => <li className="list-disc">{children}</li>,
+
       }}
     />
   )
