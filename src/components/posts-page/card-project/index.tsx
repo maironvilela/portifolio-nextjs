@@ -32,23 +32,20 @@ export function CardProject({ title, descriptions, projectUrl, technologies, ima
                     </Link>
 
                 </div>
-                <div className="text-gray-400 text-justify px-4 py-6">
+                <div className="text-gray-400 text-justify pr-14 pl-4 py-6 ">
                     <ReckText content={descriptions.raw} />
                 </div>
 
-
-                <div className="flex items-center justify-center flex-wrap gap-4 px-8 pb-6 z-20"  >
+                <div className="flex items-center justify-center flex-wrap gap-2 pb-4 z-20 "  >
 
                     {technologies.map((technology, index) => (
                         <span key={technology.name} className="bg-green-900 text-emerald-500 hover:text-white hover:font-semibold py-1 px-2 rounded-lg  text-xs text-center w-28 h-6">{technology.name}</span>
 
                     ))}
                 </div>
-
-
-
-
             </div>
+
+
 
         </div >
     )

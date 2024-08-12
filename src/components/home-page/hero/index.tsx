@@ -70,7 +70,7 @@ export const Hero = ({ name, role, description, imageUrl, contacts }: HeroProps)
                 return (
                   <motion.li
                     key={`contact-${index}`}
-                    className="text-gray-500 hover:text-gray-100 ease-in duration-300"
+                    className="text-gray-500 hover:text-emerald-600 ease-in duration-300"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 50 }}
