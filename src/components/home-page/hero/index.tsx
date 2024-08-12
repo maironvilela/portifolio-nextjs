@@ -1,14 +1,10 @@
 "use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-import {
-  TbBrandGithub,
-  TbBrandInstagram,
-  TbBrandWhatsapp,
-  TbBrandLinkedin,
-} from 'react-icons/tb'
+
 import { CMSIcon } from '@/components/shared/cms-icon'
 
 type Contact = {
@@ -28,13 +24,14 @@ type HeroProps = {
 export const Hero = ({ name, role, description, imageUrl, contacts }: HeroProps) => {
 
 
+
   return (
-    <section className=" flex flex-col-reverse items-center bg-hero-image bg-cover py-24 " >
+    <section className="container flex flex-col-reverse items-center bg-hero-image bg-cover rounded-lg" >
 
-      <div className="flex flex-col gap-5 container ">
+      <div className="flex flex-col  gap-6 px-8">
 
 
-        <div className="text-center pt-1 " >
+        <div className="text-center " >
           <motion.h1 className="text-2xl lg:text-5xl font-mono font-semibold  "
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -45,18 +42,18 @@ export const Hero = ({ name, role, description, imageUrl, contacts }: HeroProps)
             {name}
           </motion.h1>
 
-          <motion.strong className="text-base lg:text-lg text-emerald-500 mt-1 font-mono "
+          <motion.strong className="text-base lg:text-lg text-emerald-500 font-mono "
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 100 }}
             transition={{ duration: 1 }}>
             {role}
           </motion.strong>
-        </div>
+        </div >
 
 
 
-        <motion.div className="text-center space-y-4"
+        <motion.div className="text-center space-y-6"
         >
           <motion.p className="text-justify font-mono lg:text-md"
             initial={{ opacity: 0, scale: 0.1 }}
@@ -67,7 +64,7 @@ export const Hero = ({ name, role, description, imageUrl, contacts }: HeroProps)
           </motion.p>
 
 
-          <div className=" flex justify-center pt-5">
+          <div className=" flex justify-center ">
             <ul className="flex gap-4">
               {contacts.map((contact, index) => {
                 return (
@@ -89,7 +86,7 @@ export const Hero = ({ name, role, description, imageUrl, contacts }: HeroProps)
             </ul>
           </div>
         </motion.div>
-      </div>
+      </div >
       <motion.div initial={{ opacity: 0, scale: 2 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}>

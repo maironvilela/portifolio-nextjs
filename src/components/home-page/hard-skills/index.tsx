@@ -1,26 +1,5 @@
 "use client"
-import {
-  TbBrandHtml5,
-  TbBrandCss3,
-  TbBrandJavascript,
-  TbBrandTypescript,
-  TbBrandNodejs,
-  TbCodeDots,
-} from 'react-icons/tb'
-import {
-  SiDocker,
-  SiExpress,
-  SiFastify,
-  SiJest,
-  SiKnexdotjs,
-  SiNestjs,
-  SiNextdotjs,
-  SiPayloadcms,
-  SiPrisma,
-  SiPrismic,
-  SiReact,
-  SiVitest,
-} from 'react-icons/si'
+
 import { SkillCard } from './skill-card';
 import { SectionHeader } from '@/components/shared';
 import { motion } from 'framer-motion';
