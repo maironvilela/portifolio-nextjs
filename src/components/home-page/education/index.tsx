@@ -1,6 +1,7 @@
 "use client"
 
 import { SectionHeader } from "@/components/shared"
+import { AnimationEase } from "@/lib/framer-motion/animations";
 import { Education as EducationProps, QualificationItem } from "@/utils/data-fetch-home-page";
 import { motion } from 'framer-motion';
 
@@ -8,7 +9,7 @@ import { motion } from 'framer-motion';
 
 
 
-export const Education = ({ title, titleHeader, educationItems }: EducationProps) => { // precisa criar componente educationItem
+export const Education = ({ title, titleHeader, educationItems }: EducationProps) => {
 
     return (
 
@@ -20,12 +21,8 @@ export const Education = ({ title, titleHeader, educationItems }: EducationProps
                 {
                     educationItems.map((item, index) => {
                         return (
-                            <motion.div key={index}
-                                className="flex flex-col items-center "
-                                initial={{ opacity: 0, scale: 0.1 }}
-                                exit={{ opacity: 0, x: -100 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{ ease: "easeOut", duration: 1 }}>
+                            <AnimationEase key={index} transitionDuration={1}
+                                className="flex flex-col items-center ">
                                 <strong className="text-lg font-bold">
                                     {item.course}
                                 </strong>
@@ -34,7 +31,7 @@ export const Education = ({ title, titleHeader, educationItems }: EducationProps
                                 </strong>
                                 <span className="text-gray-400">Conclusão: {item.yearOfCompletion}
                                 </span>
-                            </motion.div>
+                            </AnimationEase>
                         )
                     })
                 }

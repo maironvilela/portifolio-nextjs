@@ -5,6 +5,7 @@ import { QualificationsItem } from "./qualifications-Item";
 import { SectionHeader } from "@/components/shared";
 import { motion } from 'framer-motion';
 import { QualificationSection } from "@/utils/data-fetch-home-page";
+import { AnimationEase } from "@/lib/framer-motion/animations";
 
 
 
@@ -19,24 +20,16 @@ export const Qualifications = ({ title, titleHeader, qualificationItems }: Quali
             <div className="flex flex-col gap-8">
 
                 {qualificationItems.map((qualification, index) => (
-                    <>
-                        <motion.div key={index}
-                            initial={{ opacity: 0, scale: 0.1 }}
-                            exit={{ opacity: 0, x: -100 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ ease: "easeOut", duration: 1.5 }}
+                    <div key={index}>
 
-
-                        >
+                        <AnimationEase transitionDuration={1.5}>
                             <QualificationsItem {...qualification} />
-                        </motion.div>
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.1 }}
-                            exit={{ opacity: 0, x: -100 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ ease: "easeOut", duration: 3 }}
+                        </AnimationEase>
+
+                        <AnimationEase transitionDuration={8}
+
                             className="h-[1px] w-20 m-auto bg-gray-800 shadow-teste p-1" />
-                    </>
+                    </div>
 
 
                 ))}

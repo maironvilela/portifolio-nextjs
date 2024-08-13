@@ -3,7 +3,6 @@ import { dataFetchProjectPage, DataFetchProjectsPageResult } from "@/utils/data-
 
 
 export default async function ProjectsPage() {
-  console.log('ProjectsPage')
 
   const { projects } = await dataFetchProjectPage();
 
