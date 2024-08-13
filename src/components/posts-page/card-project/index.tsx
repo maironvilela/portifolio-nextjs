@@ -1,3 +1,4 @@
+import { SectionHeader } from "@/components/shared";
 import { ReckText } from "@/components/shared/rich-text";
 import { DataFetchProjectsPageResult, Projects } from "@/utils/data-fetch-projects-page";
 import Image from "next/image";
@@ -26,7 +27,12 @@ export function CardProject({ title, descriptions, projectUrl, technologies, ima
                 <div className=" 
                     flex flex-col-reverse justify-center items-center 
                     md:justify-between md:flex-row h-40 md:h-auto " >
-                    <h2 className="text-lg font-bold font-mono text-center px-4 pt-12 ">{title} </h2>
+                    <div>
+
+                        <h2 className="text-lg font-bold font-mono text-center px-4 pt-12 ">{title} </h2>
+
+                    </div>
+
 
                     <Link href={projectUrl} target="_blank"  >
                         <BsGithub size={40} className="hover:text-emerald-400 absolute  top-3 right-3 md:static" />

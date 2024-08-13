@@ -6,7 +6,7 @@ export default async function Home() {
 
 
   return (
-    < div className="flex flex-col gap-2" >
+    <div className="flex flex-col gap-2" >
 
       <Hero name={heroSection.name}
         role={heroSection.role}
@@ -22,6 +22,8 @@ export default async function Home() {
         titleHeader={professionalExperienceSection.titleHeader}
         message={professionalExperienceSection.message}
         professionalExperienceItems={professionalExperienceSection.professionalExperienceItems} />
+
+
     </ div >
   )
 }
