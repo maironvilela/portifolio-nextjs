@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { HTMLAttributes, ReactNode } from 'react';
 
-//extends ButtonHTMLAttributes<HTMLButtonElement> 
 interface AnimationEaseProps extends React.HTMLAttributes<HTMLDivElement> {
     children?: ReactNode
     transitionDuration?: number
@@ -39,13 +38,13 @@ export function AnimationItems({ index, children }: AnimationItemsProps) {
 }
 
 
-interface AnimationLefToCenterProps {
+interface AnimationLefToCenterProps extends React.HTMLAttributes<HTMLDivElement> {
     children: ReactNode
     transitionDuration?: number
 }
-export function AnimationLefToCenter({ transitionDuration = 2, children }: AnimationLefToCenterProps) {
+export function AnimationLefToCenter({ transitionDuration = 2, children, className }: AnimationLefToCenterProps) {
     return (
-        <motion.div
+        <motion.div className={className}
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}

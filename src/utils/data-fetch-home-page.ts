@@ -132,7 +132,7 @@ export const query = `
     hardSkillSection {
       title
       titleHeader
-      hardSkillsItems (first: 20){
+      hardSkillsItems (first: 19){
         technology
         iconSvg
         masteryOfTechnology
@@ -165,7 +165,7 @@ export const query = `
       title
       titleHeader
       message
-      professionalExperienceItems (first: 19){
+      professionalExperienceItems (first: 20){
         role
         period 
         company

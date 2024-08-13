@@ -1,6 +1,5 @@
 "use client"
 import { AnimationEase } from '@/lib/framer-motion/animations';
-import { motion } from 'framer-motion';
 
 type SectionHeaderProps = {
     title: string;
@@ -9,7 +8,7 @@ type SectionHeaderProps = {
 
 export const SectionHeader = ({ title, subTitle }: SectionHeaderProps) => {
     return (
-        <div>
+        <div className="w-full">
             <div className="w-full lg:flex lg:justify-center">
                 <AnimationEase transitionDuration={1} transitionDelay={1}>
                     <span className="text-emerald-500 font-mono shadow-teste  ">{subTitle}</span>

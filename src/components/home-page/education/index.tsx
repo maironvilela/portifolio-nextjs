@@ -3,7 +3,6 @@
 import { SectionHeader } from "@/components/shared"
 import { AnimationEase } from "@/lib/framer-motion/animations";
 import { Education as EducationProps, QualificationItem } from "@/utils/data-fetch-home-page";
-import { motion } from 'framer-motion';
 
 
 

@@ -2,7 +2,6 @@
 import { ReckText } from '@/components/shared/rich-text';
 import { AnimationEase, AnimationLefToCenter } from '@/lib/framer-motion/animations';
 import { ProfessionalExperienceItems } from '@/utils/data-fetch-home-page';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 
@@ -13,7 +12,7 @@ export const ExperienceItem = ({ company, companyImage, period, role, descriptio
   return (
     <div className="flex gap-7" >
       <AnimationEase transitionDuration={0.5} className="w-10">
-        <Image src={companyImage.url} alt={` Imagem  da empresa ${company}`} width={200} height={200} className='rounded-full' />
+        <Image src={companyImage.url} alt='' width={100} height={100} className='rounded-full min-w-10 min-h-10' />
         <div className="h-full w-[1px] bg-gray-100 ml-5" />
       </AnimationEase>
 

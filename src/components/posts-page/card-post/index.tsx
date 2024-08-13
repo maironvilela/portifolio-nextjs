@@ -13,12 +13,12 @@ export type CardPostProps = {
 export function CardPost({ summary, title, imageUrl, technologies, isPublish = false }: CardPostProps) {
     return (
         <Link href="#" className=" flex-col flex  bg-opacity-50 hover:bg-opacity-0  bg-posts-page bg-cover mh-[500px] relative
-                         hover:shadow-teste w-80 z-90" >
+                         hover:shadow-teste w-80" >
             <header className="gap-2 flex flex-col items-center ">
                 <Image
                     className="rounded-b-lg h-36 w-full opacity-30"
                     src={imageUrl}
-                    alt="Mairon Vilela"
+                    alt=""
                     width={350}
                     height={350}
                 />

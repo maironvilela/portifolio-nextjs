@@ -2,7 +2,6 @@
 
 import { SkillCard } from './skill-card';
 import { SectionHeader } from '@/components/shared';
-import { motion } from 'framer-motion';
 import { HardSkill } from '@/utils/data-fetch-home-page';
 import { AnimationItems } from '@/lib/framer-motion/animations';
 

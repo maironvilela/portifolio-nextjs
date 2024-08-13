@@ -1,9 +1,7 @@
 "use client"
 
-import { FaMedal } from "react-icons/fa";
 import { QualificationsItem } from "./qualifications-Item";
 import { SectionHeader } from "@/components/shared";
-import { motion } from 'framer-motion';
 import { QualificationSection } from "@/utils/data-fetch-home-page";
 import { AnimationEase } from "@/lib/framer-motion/animations";
 

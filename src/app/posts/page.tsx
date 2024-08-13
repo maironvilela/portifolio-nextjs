@@ -1,6 +1,7 @@
+'use client'
+
 import { CardPost } from "@/components/posts-page/card-post";
-import Link from "next/link";
-import { FaJarWheat } from "react-icons/fa6";
+import { AnimationLefToCenter } from "@/lib/framer-motion/animations";
 
 export default function PostsPage() {
   const posts = [
@@ -21,11 +22,11 @@ export default function PostsPage() {
 
   return (
 
-    <div className="flex flex-wrap md:justify-center gap-8  px-20  pt-28 pb-8  h-full">
+    <AnimationLefToCenter className="flex flex-wrap justify-center gap-8  px-2  pt-28 pb-8  h-full">
       <CardPost summary={posts[0].summary} title={posts[0].title} imageUrl={posts[0].imageUrl} technologies={posts[0].technologies} />
       <CardPost summary={posts[1].summary} title={posts[1].title} imageUrl={posts[1].imageUrl} technologies={posts[1].technologies} />
 
 
-    </div>
+    </AnimationLefToCenter>
   )
 }

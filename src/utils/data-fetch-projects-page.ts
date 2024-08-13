@@ -6,6 +6,7 @@ type Technology = {
 }
 export type Projects = {
   title: string
+  subTitle: string
   projectUrl: string
   technologies: Technology[]
   descriptions: {
@@ -28,6 +29,7 @@ query MyQuery {
   projectPages {
     projects{
       title
+      subTitle
       projectUrl
       image {
         url
@@ -48,7 +50,7 @@ export async function dataFetchProjectPage() {
     query
   )
 
-  console.log(projectPages[0].projects[0].title)
+  console.log(projectPages[0].projects[0])
 
   return { ...projectPages[0] }
 }
