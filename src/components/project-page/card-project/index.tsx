@@ -37,7 +37,7 @@ export function CardProject({ title, subTitle, descriptions, projectUrl, technol
 
 
                     <Link href={projectUrl} target="_blank"  >
-                        <BsGithub size={40} className="hover:text-emerald-400 absolute  top-3 right-3 md:static" />
+                        <BsGithub size={40} className="hover:text-emerald-400 hover:shadow-teste absolute  top-3 right-3 md:static" />
                     </Link>
 
                 </div>
@@ -48,7 +48,7 @@ export function CardProject({ title, subTitle, descriptions, projectUrl, technol
                 <div className="flex items-center justify-center flex-wrap gap-2 pb-4 z-20 "  >
 
                     {technologies.map((technology, index) => (
-                        <span key={technology.name} className="bg-green-900 text-emerald-500 hover:text-white hover:font-semibold py-1 px-2 rounded-lg  text-xs text-center w-28 h-6">{technology.name}</span>
+                        <span key={technology.name} className="bg-green-900 text-emerald-500  hover:text-white hover:font-semibold py-1 px-2 rounded-lg font-mono text-xs text-center w-28 h-6">{technology.name}</span>
 
                     ))}
                 </div>

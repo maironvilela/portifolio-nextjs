@@ -12,7 +12,7 @@ export const Education = ({ title, titleHeader, educationItems }: EducationProps
 
     return (
 
-        <section className="container bg-education-image bg-cover" >
+        <section className="container bg-education-image bg-cover " >
 
             <SectionHeader title={title} subTitle={titleHeader} />
 
@@ -25,10 +25,10 @@ export const Education = ({ title, titleHeader, educationItems }: EducationProps
                                 <strong className="text-lg font-bold">
                                     {item.course}
                                 </strong>
-                                <strong className="text-gray-500 font-bold">
+                                <strong className="text-gray-300 font-semibold">
                                     {item.school}
                                 </strong>
-                                <span className="text-gray-400">Conclusão: {item.yearOfCompletion}
+                                <span className="text-gray-300">Conclusão: {item.yearOfCompletion}
                                 </span>
                             </AnimationEase>
                         )

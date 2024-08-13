@@ -10,13 +10,13 @@ export const Header = () => {
   const PAGES = [
     {
       path: '/',
-      label: 'Curriculo',
+      label: 'Currículo',
       isActive: path === '/'
 
     },
     {
       path: '/projects',
-      label: 'projects',
+      label: 'Projetos',
       isActive: path === '/projects'
     },
 
@@ -35,7 +35,7 @@ export const Header = () => {
       <ul className="flex justify-center  gap-4 ">
         {PAGES.map((page, index) => (
           <li key={index} className="p-2 border-b-2 border-transparent hover:border-b-emerald-500" >
-            <Link href={page.path} className={page.isActive ? "text-emerald-500" : ""} >
+            <Link href={page.path} className={page.isActive ? "text-emerald-500 shadow-teste p-2 rounded-full" : ""} >
               <strong className="mr-1">#</strong>
               <span>{page.label}</span>
             </Link>

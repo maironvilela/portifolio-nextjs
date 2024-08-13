@@ -32,7 +32,7 @@ export const Hero = ({ name, role, description, imageUrl, contacts }: HeroProps)
         <div className="text-center " >
 
           <AnimationLefToCenter>
-            <h1 className="text-2xl lg:text-5xl font-mono font-semibold">MAIRON VILELA</h1>
+            <h1 className="text-2xl lg:text-5xl font-mono font-semibold pt-2">{name}</h1>
           </AnimationLefToCenter>
 
           <AnimationEase>
@@ -44,14 +44,14 @@ export const Hero = ({ name, role, description, imageUrl, contacts }: HeroProps)
         </div >
 
         <AnimationEase>
-          <p className="text-justify font-mono lg:text-md">
+          <p className="text-justify break-keep	hyphens-auto				 font-mono lg:text-md">
             {description}
           </p>
         </AnimationEase>
 
         <div className="text-center space-y-6">
 
-          <div className=" flex justify-center ">
+          <div className=" flex justify-center gap-6 ">
             {contacts.map((contact, index) => {
               return (
                 <AnimationItems key={index} index={index}>
