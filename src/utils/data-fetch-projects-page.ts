@@ -26,7 +26,7 @@ export type DataFetchProjectsPageResult = {
 export const query = `
 query MyQuery {
   projectPages {
-    projects (first: 3){
+    projects{
       title
       projectUrl
       image {
@@ -48,7 +48,7 @@ export async function dataFetchProjectPage() {
     query
   )
 
-  console.log(projectPages[0].projects[0].descriptions.raw)
+  console.log(projectPages[0].projects[0].title)
 
   return { ...projectPages[0] }
 }
