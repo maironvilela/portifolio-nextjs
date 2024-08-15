@@ -22,11 +22,9 @@ export default function PostsPage() {
 
   return (
 
-    <AnimationLefToCenter className="flex flex-wrap justify-center gap-8  px-2  pt-28 pb-8  h-full">
+    <AnimationLefToCenter className="flex flex-wrap justify-center gap-8  pt-28 pb-52 ">
       <CardPost summary={posts[0].summary} title={posts[0].title} imageUrl={posts[0].imageUrl} technologies={posts[0].technologies} />
       <CardPost summary={posts[1].summary} title={posts[1].title} imageUrl={posts[1].imageUrl} technologies={posts[1].technologies} />
-
-
     </AnimationLefToCenter>
   )
 }

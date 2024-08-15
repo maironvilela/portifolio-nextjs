@@ -50,7 +50,7 @@ export async function dataFetchProjectPage() {
     query
   )
 
-  console.log(projectPages[0].projects[0])
+  //console.log(projectPages[0].projects[0])
 
   return { ...projectPages[0] }
 }

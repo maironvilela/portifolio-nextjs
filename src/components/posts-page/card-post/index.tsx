@@ -12,7 +12,7 @@ export type CardPostProps = {
 
 export function CardPost({ summary, title, imageUrl, technologies, isPublish = false }: CardPostProps) {
     return (
-        <Link href="#" className=" flex-col flex  bg-opacity-50 hover:bg-opacity-0  bg-posts-page bg-cover mh-[500px] relative
+        <Link href="#" className=" flex-col flex  bg-opacity-50 hover:bg-opacity-0  bg-posts-page bg-cover   relative
                          hover:shadow-teste w-80" >
             <header className="gap-2 flex flex-col items-center ">
                 <Image

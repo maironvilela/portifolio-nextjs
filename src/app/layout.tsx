@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={inter.className} >
         <Header />
         {children}
-        <footer className="flex flex-col justify-center items-center py-8 border-solid border-t border-gray-700 font-mono text-sm mt-12">
+        <footer className="flex flex-col justify-center items-center py-8 border-solid border-t border-gray-700 font-mono text-sm mt-12   ">
           <strong className="text-gray-400">Desenvolvido por</strong>
           <span className="text-emerald-500">Mairon Vilela</span>
         </footer>
